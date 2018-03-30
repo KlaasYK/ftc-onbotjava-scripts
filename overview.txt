@@ -1,0 +1,21 @@
+get code:
+GET http://192.168.49.1:8080/java/file/get?f=/src/org/firstinspires/ftc/teamcode/TestOpMode.java
+
+save code:
+POST http://192.168.49.1:8080/java/file/save?f=/src/org/firstinspires/ftc/teamcode/TestOpMode.java
+
+form data:
+data: urlencodedstring
+
+Build:
+GET http://192.168.49.1:8080/java/build/start
+
+Get a timestamp as response (to calculate build duration)
+
+Wait:
+Returns as soon as build finishes (I think)
+GET http://192.168.49.1:8080/java/build/wait
+Get build errors back (in plain text?)
+
+Build Status (if it succeeded or not):
+GET http://192.168.49.1:8080/java/build/status
